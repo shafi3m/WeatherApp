@@ -1,0 +1,67 @@
+# Weather App
+
+# DEMO
+https://shafi3m.github.io/WeatherApp/
+
+
+## Overview
+
+The Weather App is a user-friendly web application designed to provide real-time weather information for cities worldwide. Leveraging the OpenWeatherMap API, the app allows users to search for weather details by entering a city name, offering an intuitive interface with suggestions as the user types.
+
+## Features
+
+- **Real-Time Weather Data**: Displays current temperature and weather conditions for any city.
+- **City Suggestions**: Provides city suggestions based on user input, enhancing the search experience.
+- **Error Handling**: Displays user-friendly error messages for invalid city names or API request failures.
+- **Clear Input**: A clear button to reset the input field when desired.
+- **Responsive Design**: Optimized for various devices with a focus on a dark theme using Tailwind CSS.
+
+## Technologies Used
+
+- **HTML**: Structure of the application.
+- **CSS**: Tailwind CSS for styling and layout.
+- **JavaScript**: For dynamic functionality, API interaction, and DOM manipulation.
+- **API**: OpenWeatherMap API for fetching weather data.
+
+## Getting Started
+
+### Prerequisites
+
+- A web browser (Chrome, Firefox, etc.) to run the application.
+- Basic understanding of HTML, CSS, and JavaScript (optional for usage, but helpful for modifications).
+
+### Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/weather-app.git
+   cd weather-app
+2. Open the Project: Open index.html in your preferred web browser.
+
+3. API Key: Replace the placeholder API key in the app.js file with your own OpenWeatherMap API key:
+const apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap Free API key
+
+**Usage**
+1.Enter a city name in the input field.
+2.Click the search button to retrieve the weather data for the specified city.
+3.If the city is found, the weather information will be displayed. If not, an error message will be shown.
+4.Use the clear button to reset the input field.
+
+**Example**
+Searching for "Mumbai" will display the current temperature and weather description for Mumbai City.
+
+**Code Explanation**
+Key Functions
+-fetchWeatherData(city): Fetches weather data from the OpenWeatherMap API for a given city.
+-displayWeatherData(data): Updates the UI with the fetched weather data.
+-displayErrorMessage(): Displays an error message when the city is not found.
+-fetchCitySuggestions(query): Retrieves city suggestions based on user input.
+-clearInputField(): Resets the input field and the clear button visibility.
+
+**Contributing**
+Contributions are welcome! If you have suggestions for improvements or features, feel free to open an issue or submit a pull request.
+
+**Acknowledgments**
+-Thanks to OpenWeatherMap for providing the weather data API.
+-Special thanks to the creators of Tailwind CSS for making styling so easy and efficient.
+-Special thanks to remixicons for providing the free icons.
